@@ -1,5 +1,5 @@
 import pandas as pd
-from src.app import transform_orders
+from src.app_pandas import transform_orders
 
 def test_transform_orders():
     # Lê CSV de teste
