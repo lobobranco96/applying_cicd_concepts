@@ -9,6 +9,7 @@ def test_expected_columns():
     'quantity',
     'total_price',
     'order_date',
+    'status'
     ]
 
     df_columns = get_csv_columns(file_path)
