@@ -1,7 +1,7 @@
 from src.schema import get_csv_columns
 
 def test_expected_columns():
-    file_path = "../data/orders.csv"
+    file_path = "data/orders.csv"
     
     expected_columns = ['order_id',
     'user_id',
