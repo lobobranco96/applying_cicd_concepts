@@ -2,6 +2,7 @@ from pyspark.sql.types import StringType, DateType
 from pyspark.sql import functions as F
 from src.app_pyspark import users
 
+
 def test_transform_users(spark):
     file_path = "data/users.csv"
     df_entrada = spark.read.csv(file_path, header=True, inferSchema=True).limit(100)

@@ -1,6 +1,7 @@
 from pyspark.sql import SparkSession, functions as F
 from pyspark.sql.types import StringType, DoubleType, TimestampType
-from src.app_pyspark import payments  
+from src.app_pyspark import payments
+
 
 def test_transform_payments(spark):
     file_path = "data/payments.csv"

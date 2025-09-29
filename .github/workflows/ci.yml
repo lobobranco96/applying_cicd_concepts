@@ -26,10 +26,6 @@ jobs:
         run: |
           black --check .
 
-      - name: formatacao do codigo
-        if: github.event_name == 'push'
-        run: black .
-
       - name: Lint code with Flake8
         run: |
           flake8 .
