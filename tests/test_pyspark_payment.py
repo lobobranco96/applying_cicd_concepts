@@ -1,4 +1,4 @@
-from pyspark.sql import SparkSession, functions as F
+from pyspark.sql import functions as F
 from pyspark.sql.types import StringType, DoubleType, TimestampType
 from src.app_pyspark import payments
 
