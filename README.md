@@ -13,12 +13,16 @@ Criei um repositorio que demonstra como aplicar **Continuous Integration (CI)** 
 |   ├── actions1.JPG
 |   └── ci-ok.JPG
 ├── src/
+│   ├── app_pandas.py
 │   └── app_pyspark.py  # Funções de transformação (orders, payments, etc.)
 ├── tests/
 │   ├── conftest.py     # Fixture Spark centralizada
-│   ├── test_orders.py  # Testes para transformação Orders
-│   ├── test_payments.py
-│   └── test_products.py
+│   ├── test_pyspark_orders.py
+│   ├── test_pyspark_payments.py
+│   ├── test_pyspark_products.py
+│   ├── test_pyspark_users.py
+│   ├── test_transform_orders.py
+│   └── test_schema.py
 └── .github/
     └── workflows/
         └── ci.yml      # Pipeline do GitHub Actions
