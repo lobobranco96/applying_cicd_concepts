@@ -1,4 +1,5 @@
 from pyspark.sql.types import StringType, DateType
+from pyspark.sql import functions as F
 from src.app_pyspark import users
 
 def test_transform_users(spark):
