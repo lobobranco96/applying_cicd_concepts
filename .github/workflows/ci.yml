@@ -22,6 +22,14 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Checkar a formatação do codigo
+        run: |
+          black --check .
+          
+      - name: Lint code with Flake8
+        run: |
+          flake8 .
+
       - name: Rodar testes com Pytest
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)/src
