@@ -1,4 +1,5 @@
 from pyspark.sql.types import StringType, DoubleType, IntegerType
+from pyspark.sql import functions as F
 from src.app_pyspark import products
 
 def test_transform_products(spark):
