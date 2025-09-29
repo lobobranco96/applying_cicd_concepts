@@ -12,6 +12,5 @@ def test_expected_columns():
     ]
 
     df_columns = get_csv_columns(file_path)
-    assert df_columns == expected_columns (
+    assert df_columns == expected_columns, \
         f"Colunas diferentes!\nEsperado: {expected_columns}\nEncontrado: {df_columns}"
-    )
