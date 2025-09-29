@@ -24,4 +24,5 @@ jobs:
 
       - name: Rodar testes com Pytest
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)/src
           pytest
