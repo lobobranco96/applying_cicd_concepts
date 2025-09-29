@@ -1,6 +1,8 @@
-from src.app import orders_columns
+from src.schema import get_csv_columns
 
-def test_columns_check():
+def test_expected_columns():
+    file_path = "../data/orders.csv"
+    
     expected_columns = ['order_id',
     'user_id',
     'product_id',
@@ -8,8 +10,8 @@ def test_columns_check():
     'total_price',
     'order_date',
     ]
-    file_path = "/content/drive/MyDrive/projetos/ecommerce-pipeline/include/2025-09-22/orders.csv"
-    df_columns = orders_columns(file_path)
+
+    df_columns = get_csv_columns(file_path)
     assert df_columns == expected_columns (
         f"Colunas diferentes!\nEsperado: {expected_columns}\nEncontrado: {df_columns}"
     )
