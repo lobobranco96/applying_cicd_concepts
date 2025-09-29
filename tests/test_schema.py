@@ -1,4 +1,4 @@
-from src.app import get_csv_columns
+from src.app_pandas import get_csv_columns
 
 def test_expected_columns():
     file_path = "data/orders.csv"
