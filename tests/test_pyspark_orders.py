@@ -1,16 +1,6 @@
-import pytest
-from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import StringType, IntegerType, DoubleType, TimestampType
-from src.transform_pyspark import orders
-
-
-@pytest.fixture(scope="module")
-def spark():
-    spark = SparkSession.builder.master("local[*]").appName("Test").getOrCreate()
-    yield spark
-    spark.stop()
-
+from src.app_pyspark import orders
 
 def test_transform_orders(spark):
   file_path = "data/orders.csv"
